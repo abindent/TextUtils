@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import MetaTags from "react-meta-tags"
 import { Header, Footer, TextForm, About, Alert } from "./components/index"
-import { HashRouter  as Router,Route,Switch} from "react-router-dom";
+import { Router,Route,Switch} from "react-router-dom";
 import "./dark-mode.css"
 
 function App() {
