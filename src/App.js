@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import MetaTags from "react-meta-tags"
-import { Header, Footer, TextForm, About, Alert } from "./components/index"
-import { Router,Route,Switch} from "react-router-dom";
+import { Header, Footer, TextFormAlert } from "./components/index"
 import "./dark-mode.css"
 
 function App() {
@@ -35,9 +34,7 @@ function App() {
     }
     return (
         <>
-            <Router>
-            <Switch>
-          <Route path="/" exact>
+ 
             <MetaTags>
                 <title>Home - TextUtils</title>
                 <meta id="meta-description" name="description" content="Some description." />
@@ -45,30 +42,12 @@ function App() {
                 <meta id="og-image" property="og:image" content="path/to/image.jpg" />
                 <link rel="icon" href="https://textanalyzerpy.herokuapp.com/static/favicon/favicon.png" type="image/png" />
             </MetaTags>
-            <Header title={"TextUtils"} home={"Home"} HomeName="nav-link active" AboutName="nav-link" mode={mode} toggleMode={toggleMode} btnText={btnText} /><br />
+            <Header title={"TextUtils"} home={"Home"} HomeName="nav-link active"  mode={mode} toggleMode={toggleMode} btnText={btnText} /><br />
             <Alert alert={alert} />
             <div className="container my-3">
               <TextForm heading="Enter your text here to analyze" showAlert={showAlert}/>
             </div>
             <Footer/>
-            </Route>
-          <Route path="/about" >
-          <MetaTags>
-                <title>About - TextUtils</title>
-                <meta id="meta-description" name="description" content="Some description." />
-                <meta id="og-title" property="og:title" content="MyApp" />
-                <meta id="og-image" property="og:image" content="path/to/image.jpg" />
-                <link rel="icon" href="https://textanalyzerpy.herokuapp.com/static/favicon/favicon.png" type="image/png" />
-            </MetaTags>
-            <Header title={"TextUtils"} home={"Home"} HomeName="nav-link" AboutName="nav-link active" mode={mode} toggleMode={toggleMode} btnText={btnText}/><br />
-            <Alert />
-            <div className="container my-3">
-            <About />
-            </div><br />
-            <Footer/>
-            </Route>
-            </Switch>
-            </Router>
         </>
     );
 }

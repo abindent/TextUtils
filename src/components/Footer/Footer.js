@@ -11,9 +11,9 @@ const Footer = () => {
     </a>
 
     <ul className="nav col-md-4 justify-content-end">
-      <li className="nav-item"><a href="/" className="nav-link px-2 text-muted">Home</a></li>
-      <li className="nav-item"><a href="/about" className="nav-link px-2 text-muted">About</a></li>
-      <li className="nav-item"><a href="htrps://www.patreon.com/join/OpenSourecGames" target="_blank" rel="noreferrer" className="nav-link px-2 text-muted">Pricing</a></li>
+ <li className="nav-item"><a href="/" className="nav-link px-2 text-muted">Home</a></li> <li className="nav-item"><a href="https://osourcegames.firebaseapp.com/About.html" className="nav-link px-2 text-muted">About</a></li>
+
+<li className="nav-item"><a href="htrps://www.patreon.com/join/OpenSourecGames" target="_blank" rel="noreferrer" className="nav-link px-2 text-muted">Pricing</a></li>
     </ul>
   </footer>
         </>
