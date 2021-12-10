@@ -20,7 +20,7 @@ const Header = (props) => {
 <a className="nav-link" target="_blank" rel="noreferrer" href="https://osourcegames.firebaseapp.com/About.html">About</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" target="_blank" rel="noreferrer" href="htrps://www.patreon.com/join/OpenSourecGames">Pricing</a>
+          <a className="nav-link" target="_blank" rel="noreferrer" href="https://www.patreon.com/join/OpenSourceGames">Pricing</a>
         </li>
       </ul>
     </div>

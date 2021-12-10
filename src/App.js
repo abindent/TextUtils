@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import MetaTags from "react-meta-tags"
-import { Header, Footer, TextFormAlert } from "./components/index"
+import { Header, Footer, TextForm, Alert } from "./components/index"
 import "./dark-mode.css"
 
 function App() {
